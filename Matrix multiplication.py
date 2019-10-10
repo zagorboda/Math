@@ -115,5 +115,7 @@ def matrix_multiplication(m_1, n_1, m_2, n_2):
             print(matrix_3[i][j], end=" ")
         print()
 
+    return 0
+
 
 matrix_multiplication(m_1, n_1, m_2, n_2)
