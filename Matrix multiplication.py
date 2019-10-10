@@ -10,7 +10,7 @@ n_2 = 0
 
 matrix_compatible = False
 
-# Cheking if matrixs are compatible
+# Checking if matrix are compatible
 while(matrix_compatible == False):
 
     # Checking correct rows input in first matrix
@@ -38,7 +38,6 @@ while(matrix_compatible == False):
             continue
         else:
             break
-
 
     # Checking correct rows input in second matrix
     while(1):
@@ -73,7 +72,7 @@ while(matrix_compatible == False):
         print("\nMatrix are not compatible. Try another values \n")
 
 
-def matrix_multipliciation(m_1, n_1, m_2, n_2):
+def matrix_multiplication(m_1, n_1, m_2, n_2):
     # Taking first matrix from user input
     print("Enter first matrix")
     for i in range(m_1):
@@ -116,14 +115,5 @@ def matrix_multipliciation(m_1, n_1, m_2, n_2):
             print(matrix_3[i][j], end=" ")
         print()
 
-    # for i in range(m_1):
-    #     for k in range(n_2):
-    #         matrix = 0
-    #         for j in range(n_2):
-    #             matrix += matrix_1[i][j] * matrix_2[j][i]
-    #             print("m1 = ",matrix_1[i][j] ," m2 = ", matrix_2[j][i] ,"i j = ", i, j)
-    #             print(matrix, "\n")
-    #             # print("indexs: ", i, j)
-    #         print("Element: ", matrix)
 
-matrix_multipliciation(m_1, n_1, m_2, n_2)
+matrix_multiplication(m_1, n_1, m_2, n_2)
