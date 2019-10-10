@@ -117,6 +117,3 @@ def matrix_multiplication(m_1, n_1, m_2, n_2):
 
 
 matrix_multiplication(m_1, n_1, m_2, n_2)
-
-print("\n")
-print(123)
