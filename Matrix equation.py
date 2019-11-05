@@ -3,7 +3,6 @@ import numpy as np
 a = []
 b = []
 x = []
-a_b = []
 
 print("Entering matrix of coefficients.")
 
@@ -58,16 +57,9 @@ for i in range(m_1):
 
 b = np.array(b)
 b = np.reshape(b, (m_1, -1))
-a_b = np.hstack((a, b))
 
-if(np.linalg.matrix_rank(a) == np.linalg.matrix_rank(a_b)):
-    if(np.linalg.matrix_rank(a) == n_1):
-        print(a)
-        print(b)
-        print(a_b)
-        x = np.linalg.solve(a, b)
-        print("The answer is : \n", x)
-    elif(np.linalg.matrix_rank(a) < n_1):
-        print("Equation has endless number of solutions.")
-else:
-    print("Equation doesn't have any solution.")
+print(a)
+print(b)
+print(a_b)
+x = np.linalg.solve(a, b)
+print("The answer is : \n", x)
